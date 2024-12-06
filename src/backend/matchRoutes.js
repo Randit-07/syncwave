@@ -338,6 +338,7 @@ router.post('/matchmaking/swipe', async (req, res) => {
         return res.status(404).json({ error: 'Pool entry not found' });
       }
 
+      
       // Record swipe action
       const { error: swipeError } = await supabase
         .from('swipe_actions')
@@ -345,6 +346,7 @@ router.post('/matchmaking/swipe', async (req, res) => {
           swiper_id: user.id,
           swiped_user_id: matchUserId,
           pool_id: poolEntry.id,
+          swiped:direction
         });
 
       if (swipeError) {
@@ -352,7 +354,8 @@ router.post('/matchmaking/swipe', async (req, res) => {
         return res.status(500).json({ error: 'Failed to record swipe' });
       }
 
-      // Check for mutual match on right swipe
+      // Check for mutual match on right swipe'
+      //  mutual_swipe = if direction == yes on a user  and a user == yes on a swiper
       if (direction === 'right') {
         const { data: mutualSwipe, error: mutualError } = await supabase
           .from('swipe_actions')
