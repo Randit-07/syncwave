@@ -85,8 +85,7 @@ const Login = () => {
               Welcome Back
             </Typography>
             <Typography variant="body1" sx={{ mb: 3, opacity: 0.9 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed diam nonummy nibh euismod tincidunt.
+              Find concert buddies and match with people who share similar music interests
             </Typography>
           </Grid>
 
