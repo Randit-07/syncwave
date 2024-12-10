@@ -5,6 +5,7 @@ import { TextField, Button, Box, Typography, Alert, Container, Grid, Snackbar } 
 import { useNavigate } from 'react-router-dom';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { inputStyles } from './signup';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -85,7 +86,11 @@ const Login = () => {
               Welcome Back
             </Typography>
             <Typography variant="body1" sx={{ mb: 3, opacity: 0.9 }}>
+<<<<<<< HEAD
               Find concert buddies and match with people who share similar music interests
+=======
+              Find and Meet Concert Lovers.
+>>>>>>> f4eccbacf98d7becb2ed9b860c9df47fb9b04bad
             </Typography>
           </Grid>
 
@@ -117,14 +122,7 @@ const Login = () => {
                     })}
                     error={!!errors.email}
                     helperText={errors.email?.message}
-                    sx={{
-                      '& .MuiOutlinedInput-root': {
-                        pl: 5,
-                        '&:hover fieldset': {
-                          borderColor: '#8B5CF6',
-                        },
-                      },
-                    }}
+                    sx={inputStyles}
                   />
                 </Box>
 
@@ -148,14 +146,7 @@ const Login = () => {
                     })}
                     error={!!errors.password}
                     helperText={errors.password?.message}
-                    sx={{
-                      '& .MuiOutlinedInput-root': {
-                        pl: 5,
-                        '&:hover fieldset': {
-                          borderColor: '#8B5CF6',
-                        },
-                      },
-                    }}
+                    sx={inputStyles}
                   />
                 </Box>
 
