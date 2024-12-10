@@ -86,11 +86,7 @@ const Login = () => {
               Welcome Back
             </Typography>
             <Typography variant="body1" sx={{ mb: 3, opacity: 0.9 }}>
-<<<<<<< HEAD
               Find concert buddies and match with people who share similar music interests
-=======
-              Find and Meet Concert Lovers.
->>>>>>> f4eccbacf98d7becb2ed9b860c9df47fb9b04bad
             </Typography>
           </Grid>
 
