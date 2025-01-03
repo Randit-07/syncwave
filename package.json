@@ -8,7 +8,7 @@
     "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "backend": "cd src/app/frontend && npm install && npm run build && cd ../../ && cd backend && node start",
+    "backend": "cd src/app/frontend && npm install && npm run build && cd ../../ && cd backend && npm start",
     "preview": "vite preview"
   },
   "dependencies": {
