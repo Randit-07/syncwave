@@ -60,10 +60,10 @@ CertGram is a modern web application that helps users find concert buddies and m
 
 ## 🔒 Environment Variables Required
 
-Create a `.env` file with:
-- `SUPABASE_URL`
-- `SUPABASE_ANON_KEY`
-- `JWT_SECRET`
+Create a `.env` file  in backend root with variables:
+- `SUPABASE_URL` : SUPABASE DATABASE URL
+- `SUPABASE_ANON_KEY` : SUPABASE DATABASE KEY
+- `JWT_SECRET` : JSON Web Token Secret For Handshake Upon Authentication
 
 ## 📝 Features
 
