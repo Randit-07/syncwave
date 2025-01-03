@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "backend" : "cd src/app/frontend && npm install && cd ../.. && npm install && cd backend && node index.js",
-    "preview": "vite preview"
+    "dev": "vite",                  // Run frontend development server
+    "start": "vite",                 // Run frontend (consider serving from backend in production)
+    "build": "vite build",           // Build frontend for production
+    "lint": "eslint .",              // Lint code with ESLint
+    "backend": "cd src/app/frontend && npm install && npm run build && cd ../../ && npm install && cd src/backend && node index.js",  // Install dependencies and run backend
+    "preview": "vite preview"       // Preview production build of frontend
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.3",
