@@ -12,7 +12,7 @@ import chatRoutes from './chatRoutes.js';
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.port || 5000;
 
 // Middlewares
 app.use(cors());
