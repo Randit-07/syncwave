@@ -12,8 +12,7 @@ import uploadRoutes from './uploadRoutes.js';
 import chatRoutes from './chatRoutes.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const frontendPath = path.join(__dirname, '../app/frontend/dist');
-
+const frontendPath = path.join(__dirname, '..', '..', 'app', 'frontend', 'dist');
 dotenv.config();
 
 const app = express();
